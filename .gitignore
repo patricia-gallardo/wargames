@@ -1,6 +1,5 @@
 CMakeCache.txt
 .idea/*
-CMakeLists.txt
 cmake-build-debug/*
 cmake-build-release/*
 CMakeFiles
