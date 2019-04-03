@@ -41,6 +41,18 @@ add_executable(launch_fixed_cpp src/launch_fixed.cpp)
 # -------------------------
 add_executable(simple_exploit src/simple_exploit.c)
 
-# Simple Stack Buffer Shellcode
+# Wargames C++
+# -------------------------
+add_executable(launch_bigger src/launch_bigger.cpp)
+# remove the stack protector
+# *** stack smashing detected ***: <unknown> terminated
+# Aborted (core dumped)
+target_compile_options(launch_bigger PRIVATE -fno-stack-protector)
+
+# Attempt 1: Simple Stack Buffer Shellcode
 # -------------------------
 add_executable(simple_stack_overflow_test src/simple_stack_overflow_test.c)
+
+# Attempt 1: Simple Stack Buffer Exploit
+# -------------------------
+add_executable(simple_stack_overflow_exploit src/simple_stack_overflow_exploit.c)
