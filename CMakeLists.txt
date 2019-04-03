@@ -56,3 +56,11 @@ add_executable(simple_stack_overflow_test src/simple_stack_overflow_test.c)
 # Attempt 1: Simple Stack Buffer Exploit
 # -------------------------
 add_executable(simple_stack_overflow_exploit src/simple_stack_overflow_exploit.c)
+
+# Attempt 2: Simple Stack Buffer Shellcode
+# -------------------------
+add_executable(simple_stack_overflow_test2 src/simple_stack_overflow_test2.c)
+
+# Attempt 2: Simple Stack Buffer Exploit
+# -------------------------
+add_executable(simple_stack_overflow_exploit2 src/simple_stack_overflow_exploit2.c)
