@@ -76,3 +76,7 @@ add_executable(shellcode_asm src/shellcode_asm.c)
 # Attempt 3: Stack Buffer Shellcode test
 # -------------------------
 add_executable(shellcode_test src/shellcode_test.c)
+
+# Attempt 3: Stack Buffer Shellcode exploit
+# -------------------------
+add_executable(shellcode_exploit src/shellcode_exploit.c)
