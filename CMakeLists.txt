@@ -49,7 +49,7 @@ add_executable(launch_bigger src/launch_bigger.cpp)
 # Aborted (core dumped)
 target_compile_options(launch_bigger PRIVATE -fno-stack-protector)
 
-# Attempt 1: Simple Stack Buffer Shellcode
+# Attempt 1: Simple Stack Buffer Shellcode test
 # -------------------------
 add_executable(simple_stack_overflow_test src/simple_stack_overflow_test.c)
 
@@ -57,10 +57,22 @@ add_executable(simple_stack_overflow_test src/simple_stack_overflow_test.c)
 # -------------------------
 add_executable(simple_stack_overflow_exploit src/simple_stack_overflow_exploit.c)
 
-# Attempt 2: Simple Stack Buffer Shellcode
+# Attempt 2: Simple Stack Buffer Shellcode test
 # -------------------------
 add_executable(simple_stack_overflow_test2 src/simple_stack_overflow_test2.c)
 
 # Attempt 2: Simple Stack Buffer Exploit
 # -------------------------
 add_executable(simple_stack_overflow_exploit2 src/simple_stack_overflow_exploit2.c)
+
+# Attempt 3: Stack Buffer Shellcode in C
+# -------------------------
+add_executable(shellcode src/shellcode.c)
+
+# Attempt 3: Stack Buffer Shellcode in asm
+# -------------------------
+add_executable(shellcode_asm src/shellcode_asm.c)
+
+# Attempt 3: Stack Buffer Shellcode test
+# -------------------------
+add_executable(shellcode_test src/shellcode_test.c)
